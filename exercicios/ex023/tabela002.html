@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 250px;
+        }
+        thead th{
+            background-color: gray;
+        }
+        td.number {
+            width: 100px;
+            text-align: right;
+        }
+        th, td { 
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>uso de tabelas grandes</h1>
-    
+    <table>
+        <thead>
+            <th>Estado</th>
+            <th>População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">45.000.00</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">40.000.00</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">35.000.00</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
