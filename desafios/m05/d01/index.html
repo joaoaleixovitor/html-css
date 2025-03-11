@@ -5,25 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsívo</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/mediaquery.css">
+    <link rel="stylesheet" href="styles/mediaquery.css" media="screen">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 </head>
 <body>
     <main>
         <header>
             <h1>Meu Site</h1>
-            <div id="menu">
+            <span id="menu_header" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <nav id="menu">
                 <div id="opt1" class="button">Opção 1</div>
                 <div id="opt2" class="button">Opção 2</div>
                 <div id="opt3" class="button">Opção 3</div>
                 <div id="opt4" class="button">Opção 4</div>
                 <div id="opt5" class="button">Opção 5</div>
                 <div id="opt6" class="button">Opção 6</div>
-            </div>
+            </nav>
         </header>
         <section>
             <h2>Teste de Flexbox</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis voluptas sint totam obcaecati odio tempora provident laboriosam deleniti delectus, nemo commodi! Laudantium, ad! Quibusdam repudiandae exercitationem cumque laborum, quam architecto? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur porro ullam necessitatibus aspernatur asperiores itaque quas quam! Aliquid, fugit! Maxime ad assumenda laborum necessitatibus velit quae delectus animi blanditiis adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus sequi aliquam aut eveniet exercitationem quia voluptates eos, iusto a quisquam rerum alias, distinctio impedit? Nesciunt sequi molestias culpa commodi adipisci?</p>
         </section>
     </main>
+    <script>
+        function clickMenu() {
+            if (menu.style.display == "flex") {
+                menu.style.display = "none"
+
+            } else {
+                menu.style.display = "flex "
+            }
+        }
+    </script>
 </body>
 </html>
