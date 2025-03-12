@@ -1,0 +1,44 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    background-color: #EB6E00;
+    width: 100%;
+    padding: 0px 0px;
+}
+
+a {
+    margin: 15px;
+}
+
+span {
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    scale: 1.2;
+}
+
+p {
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+b {
+    color: #EB6E00;
+}
+
+main {
+    padding-top: 65px;
+}
