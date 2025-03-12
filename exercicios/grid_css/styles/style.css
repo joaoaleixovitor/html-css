@@ -6,11 +6,31 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: grey;
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "aside article section"
+    "footer footer footer";
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+header {
+    background-color: red;
+}
+
+aside {
+    background-color: purple;
+}
+
+article {
+    background-color: aqua;
+}
+
+section {
+    background-color: brown;
+}
+
+footer {
+    background-color: crimson;
 }
