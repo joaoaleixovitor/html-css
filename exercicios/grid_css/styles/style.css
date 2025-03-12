@@ -4,33 +4,37 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-#container {
+main#container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "header header header"
-    "aside article section"
-    "footer footer footer";
+    grid-template-columns: 1fr 8fr;
 }
 
 header {
-    background-color: red;
+    background-color: gold;
+    grid-column: span 2;
 }
 
 aside {
-    background-color: purple;
-}
+    grid-column: 1;
+    background-color: red;
 
-article {
-    background-color: aqua;
 }
 
 section {
-    background-color: brown;
+    grid-column: 2;
+    background-color: blue;
+
 }
 
 footer {
-    background-color: crimson;
+    grid-column: span 2;
+    background-color: green;
+
+}
+
+.item {
+    height: 200px;
 }
