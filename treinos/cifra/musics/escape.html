@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 </head>
 <body>
-    <header>
+    <header id="header">
         <a href="../index.html"><span id="menu" class="material-symbols-outlined">home</span></a>   
-        <p>| Escape - Renascer Praise</p>
+        <p>Escape - Renascer Praise</p>
     </header>   
     <main>
         <pre>
@@ -227,5 +227,16 @@
         Deus te dá escape e livramento
         </pre>
     </main>
+    <script>
+        const header = document.getElementById('header');
+
+        window.onscroll = function() {
+            if (window.scrollY > 0) {  // Ajuste o valor conforme necessário
+                header.classList.add('fixed');
+            } else {
+                header.classList.remove('fixed');
+            }
+        };
+    </script>
 </body>
 </html>

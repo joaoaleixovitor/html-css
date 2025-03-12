@@ -1,14 +1,25 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     display: flex;
     flex-flow: column nowrap;
+    width: 100%;
     background-color: #EB6E00;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.596);
+    margin-bottom: 10px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
 h1 {
@@ -21,12 +32,11 @@ main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    margin-top: 10px;
 }
 
 div {
-    margin: 3px 0px;
     background-color: #EB6E00;
+    margin: 3px 0px;
     color: white;
     width: 95%;
     padding: 15px;
