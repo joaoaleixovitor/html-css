@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.caixa {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 20%;
+    margin: 10px;
+}
+
+#btn_transfer {
+    background-color: brown;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.curso {
+    background-color: blue;
+    text-align: center;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selecionado {
+    background-color: red;
+}

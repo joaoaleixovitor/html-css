@@ -1,20 +1,22 @@
-const base = document.getElementById("base")
+const buttons = [...document.querySelectorAll(".button")]
 const display = document.getElementById("display")
 let value = "0"
 
-base.addEventListener("click", (clickedElm)=>{
-    let key = clickedElm.target
-    switch (key.id) {
-        case "btn_clear":
-            resetCalc()
-            break
-        case "btn_equal":
-            solveCalc()
-            break
-        default:
-            insertKey(key.innerHTML)
-            break
-    }
+buttons.forEach((el)=>{
+    el.addEventListener("click", (clickedElm)=>{
+        let key = clickedElm.target
+        switch (key.id) {
+            case "btn_clear":
+                resetCalc()
+                break
+            case "btn_equal":
+                solveCalc()
+                break
+            default:
+                insertKey(key.innerHTML)
+                break
+        }
+    })
 })
 
 function insertKey(newValue){
