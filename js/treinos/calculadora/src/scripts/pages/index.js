@@ -7,10 +7,13 @@ base.addEventListener("click", (clickedElm)=>{
     switch (key.id) {
         case "btn_clear":
             resetCalc()
+            break
         case "btn_equal":
             solveCalc()
+            break
         default:
             insertKey(key.innerHTML)
+            break
     }
 })
 
