@@ -13,7 +13,7 @@
     }
     #base {
         width: 30%;
-        box-shadow: 1px 1px 20px rgba(0, 0, 0, 80%);
+        box-shadow: 3px 3px 14px rgba(0, 0, 0, 45%);
         border-radius: 5px;
     }
 }
