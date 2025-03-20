@@ -7,37 +7,32 @@ buttons.forEach((el)=>{
         let key = clickedElm.target
         switch (key.id) {
             case "btn_clear":
-                resetCalc()
+                value = "0"
                 break
             case "btn_equal":
-                solveCalc()
+                value = eval(value)
                 break
             default:
-                insertKey(key.innerHTML)
+                let lastValue = value[value.length-1]
+                let addedValue = key.innerHTML
+                if (value === "0") {
+                    if (addedValue === "+" || addedValue === "*" || addedValue === "/" || addedValue === "."){
+                        value = value + addedValue
+                    } else {
+                        value = addedValue
+                    }
+                } else {
+                    if (addedValue === "+" || addedValue === "-" || addedValue === "*" || addedValue === "/" || addedValue === "."){
+                        if (lastValue !== "+" && lastValue !== "-" && lastValue !== "*" && lastValue !== "/" && lastValue !== ".") {
+                            value = value + addedValue
+                        }
+                    } else {
+                        value = value + addedValue
+                    }
+                }   
+                lastValue = value[value.length-1]
                 break
         }
+        display.innerHTML = value
     })
 })
-
-function insertKey(newValue){
-    if (value === "0") {
-        value = newValue
-    } else {
-        value = value + newValue
-    }
-    updateCalc()
-}
-
-function updateCalc(){
-    display.innerHTML = value
-}
-
-function resetCalc(){
-    value = "0"
-    updateCalc()
-}
-
-function solveCalc(){
-    value = eval(value)
-    updateCalc()
-}
