@@ -4,17 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
+    <link rel="stylesheet" href="src/styles/pages/index.css">
   </head>
   <body>
     <main>
-        <h1>Gerador de senhas</h1>
-        <div id="display">SUA SENHA AQ</div>
-        <form>
-            <input type="checkbox" id="addSpecialCharacter">Adicionar caracteres especiais</input>
-            <input type="checkbox" id="addNumbers">Adicionar números</input>
-            <input type="checkbox" id="addUpperAndLowerCase">Adicionar maiúsculas e minúsculas</input>
-            <input type="submit" value="Gerar senha">
-        </form>
+        <header>
+            <h1>Gerador de senhas</h1>
+        </header>
+        <section id="intro">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque quos nostrum eveniet sequi sint enim, neque iste repellendus aperiam ut veritatis id exercitationem doloribus numquam aliquid ad recusandae? Et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex omnis mollitia fuga vitae consequuntur excepturi consequatur voluptas quibusdam, repellat quidem maxime blanditiis tempore est aliquid tempora necessitatibus, dolorum sequi eius! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed sequi quis veniam eum molestiae voluptas, impedit soluta rem error quae aut sunt, nemo vero et placeat consequuntur perferendis! Pariatur, libero.</p>
+        </section>
+        <section id="display">SUA SENHA AQ</section>
+        <section id="customPassword">
+            <h2>Personalize sua senha</h2>
+            <form id="form">
+                <div id="passwordLength">
+                    <label for="itemPasswordLength">0</label>
+                    <input type="range" name="itemPasswordLength" id="itemPasswordLength">
+                </div>
+
+                <div id="addSpecialCharacter">
+                    <input type="checkbox" id="itemAddSpecialCharacter"></input> 
+                    <label for="itemAddSpecialCharacter">Símbolos</label>
+                </div>
+                <div id="addNumbers">
+                    <input type="checkbox" id="itemAddNumbers"></input> 
+                    <label for="itemAddNumbers">Números</label>
+                </div>
+                <div id="addUpperCase">
+                    <input type="checkbox" id="itemAddUpperCase"></input> 
+                    <label for="itemAddUpperCase">Maiúsculas</label>
+                </div>
+                <div id="addLowerCase">
+                    <input type="checkbox" id="itemAddLowerCase"></input> 
+                    <label for="itemAddLowerCase">Minúsculas</label>
+                </div>
+            </form>
+        </section>
+        <input type="submit" value="Gerar senha" id="buttonGeneratePass">
     </main>
   </body>
 </html>

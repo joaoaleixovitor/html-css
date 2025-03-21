@@ -1,0 +1,9 @@
+#intro {
+    width: 70%;
+    margin: 10px;
+}
+
+#intro > p{
+    text-align: justify;
+    text-indent: 30px;
+}

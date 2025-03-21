@@ -1,0 +1,7 @@
+@import url(../global.css);
+
+@import url(partials/background.css);
+@import url(partials/header.css);
+@import url(partials/intro.css);
+@import url(partials/display.css);
+@import url(partials/form.css);
